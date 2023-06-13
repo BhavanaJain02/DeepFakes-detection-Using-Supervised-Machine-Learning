@@ -37,28 +37,3 @@ internet.
 
 
 
-PSEUDOCODE
-
-Load datasets using zip.extract
-dividing the video into image frames for easier detection
-if video :
-then split into image frames
-if image:
-consider as it is
-face_rects, scores, idx = detector.run(frame, 0)
-for i, d in enumerate(face_rects):
-x1 = d.left()
-y1 = d.top()
-x2 = d.right()
-y2 = d.bottom()
-crop_img = frame[y1:y2, x1:x2]
-#Training the Dataset:
-for img in real_data:
-append to X, real image flatten
-append to Y, 1 because Real Data
-for img in fake_data:
-append to X, fake image
-append to Y, 0 because Fake Data
-#Normalization
-X = np.array(X)
-Y = to_categorical(Y, 2)
