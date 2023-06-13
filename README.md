@@ -40,7 +40,7 @@ internet.
 PSEUDOCODE
 
 Load datasets using zip.extract
-# dividing the video into image frames for easier detection
+dividing the video into image frames for easier detection
 if video :
 then split into image frames
 if image:
