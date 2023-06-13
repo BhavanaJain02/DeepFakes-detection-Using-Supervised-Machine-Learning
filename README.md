@@ -12,7 +12,6 @@ the functions from which it was formed in order to separate their effects.)
 
 These two networks are trained to work against each other as in the case of a non-
 cooperative game (i.e. the win of one is the loss of another). The basic goal of the
-
 generator is to artificially manufacture outputs that could easily be mistaken for real
 data. The goal of the discriminator is to identify which outputs it receives have been
 artificially created.
